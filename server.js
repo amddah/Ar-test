@@ -8,6 +8,8 @@ app.use(express.urlencoded({extended: false}));
 app.get('/', (req, res)=> {
 res.render('index');
 }); 
-app.listen(8080, () => {
+const port =process.env.PORT||3000;
+
+app.listen(port, () => {
 console.log("Listening on http://localhost:8080");
 });
