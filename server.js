@@ -9,6 +9,8 @@ app.use(express.urlencoded({extended: false}))
 app.get('/', (req,res) => {
     res.render('index')
 })
-app.listen(3000, () => {
+const port =process.env.PORT||3000;
+
+app.listen(port, () => {
     console.log('listening on port 3000')
 })
