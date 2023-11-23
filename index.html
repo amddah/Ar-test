@@ -9,7 +9,12 @@
 </head>
 <body>
     <a-scene vr-mode-ui="enabled:false;" arjs>
-            <a-nft type="nft" url="koutoubia.iset" >
+            <a-nft type="nft" url="koutoubia"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5"
+            >
                 <a-box position="0 0.5 0" material="color: red;">
             </a-nft>
     </a-scene>
