@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@9b8609bd84a292ef97bf1e8589401ae0d3201280/dist/aframe-master.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <a-scene vr-mode-ui="enabled:false;" arjs>
+    <a-scene embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled:false;">
             <a-nft type="nft" url="./koutoubia2"
                 smooth="true"
                 smoothCount="10"
